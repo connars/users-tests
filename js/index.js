@@ -23,10 +23,10 @@ $(window).bind('mousewheel', function(e) {
  });
 
 $(".card__icon").mouseover(function(){
-    $('.card__icon-line-two').addClass('rotate');
+    $(this).addClass('rotate');
 });
 $('.card__icon').mouseleave(function() {
-    $('.card__icon-line-two').removeClass('rotate');
+    $(this).removeClass('rotate');
 });
 
 $(".header__logo").mouseover(function(){
