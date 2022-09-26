@@ -1,13 +1,16 @@
 const header = $('header');
 const headerWidth = $('.header__wrapper');
+const btnTop = $('.main__button-wrapper');
 
 $(window).on('scroll', function () {   
     if ($(window).scrollTop() > 0) { 
         header.addClass('scrolled');
         headerWidth.addClass('resize-header')
+        btnTop.addClass('button-scroll')
     } else { 
         header.removeClass('scrolled'); 
         headerWidth.removeClass('resize-header')
+        btnTop.removeClass('button-scroll')
     } 
 });
 

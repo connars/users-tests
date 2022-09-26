@@ -9,6 +9,15 @@ body {
 }
 
 .main__button-wrapper {
+    transition: 0.4s;
+}
+
+.button-scroll {
+    transition: 0.5s;
+    transform: translateY(160px);
+}
+
+.main__button-wrapper {
     height: 300px;
     width: 100%;
     position: fixed;
@@ -200,6 +209,11 @@ body {
     transform: scale(1.20);
 }
 
+
+#hero {
+    height: 100vh;
+}
+
 .cards__wrapper {
     
     display: flex;
@@ -307,3 +321,38 @@ body {
     position: absolute;
     
 }
+/* 
+SECTION NUM 2 */
+
+#num-two{
+    height: 100vh;
+   
+}
+
+.products__wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.products__cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.products__cards-item {
+    background-color: #DBF226;
+    width: 180px;
+    height: auto;
+    padding: 20px;
+}
+
+.products__cards-item h3{
+    color: #052941;
+    text-align: center;
+}
+
+.products__cards-item img{
+    width: 100%;
+    height: inherit;
+}
+
