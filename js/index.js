@@ -123,3 +123,14 @@ var hoverMouse = function($el) {
 };
 
 hoverMouse($(".magnetic-button"));
+
+
+var days = ["Пон.", "Вт.", "Ср.", "Чт.", "Пят.", "Суб.", "Вс."];
+// $(".days").text((i)=>days[i]);
+document.querySelectorAll('.days').forEach((n, i) => n.textContent = days[i])
+// document.write(days[0]);
+// document.write("<p>");
+// document.write(days[2]);
+// var arr = ['яблоко','груша','апельсин'];
+
+

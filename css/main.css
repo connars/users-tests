@@ -1,11 +1,13 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
-
     background-color: #052941;
-    height: 300vh;
     font-family: 'Kanit', sans-serif;
-    user-select: none;
+    user-select: none; 
 }
 
 .main__button-wrapper {
@@ -223,6 +225,13 @@ body {
     padding-top: 120px;
 }
 
+.hero__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
 .card {
     background-color: #DBF226;
     width: 200px;
@@ -379,12 +388,56 @@ SECTION NUM 2 */
 
 .form {
     display: grid;
+    justify-items: center;
+    background-color: white;
+    padding: 10px 50px;
 }
 
 .form input {
+    width: 100%;
     margin: 10px;
-    border: 2px solid #052941;
-    padding: 15px 40px;
+    border: 1px solid #b6b6b6;
+    padding: 15px 10px;
+
+    font-family: 'Kanit', sans-serif;
+}
+
+.form input:focus-visible {
+
+    border: 1px solid #052941 !important;
+    outline: #DBF226;
+
+}  
+
+.form button {
+    margin: 10px;
+    color: #052941;
+    background-color: #DBF226;
+    border: none;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 600;
+    transition: 0.5s;
+    width: 180px;
+    height: 45px;
+}
+
+.form p {
+
+    color: #052941;
+
+}
+
+.form button:hover {
+    transition: 0.5s;
+    transform: scale(1.20);
+}
+
+.hero__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
 }
 
 .section-one {
@@ -394,4 +447,45 @@ SECTION NUM 2 */
     display: grid;
     justify-content: center;
     align-content: center;
+
+    background-image: url(/assets/beast\ 2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.section-two {
+    width: 50%;
+    height: 100vh;
+   
+    display: grid;
+    justify-content: center;
+    align-content: center;
+
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#num-three {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.week {
+    display: flex;
+    justify-content: space-between;
+}
+
+.days {
+    font-size: 34px;
+    font-weight: 600;
+    color: white;
+}
+@media screen and (max-width: 600px) {
+    .section-one {
+        width: 100%;
+    }
+
+    .section-two {
+        width: 100%;
+    }
 }
